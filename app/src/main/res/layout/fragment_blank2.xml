@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.anew.weather.Fragment.BlankFragment2">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar">
+    </include>
+    <!-- TODO: Update blank fragment layout -->
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="channel Fragment"/>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textview_shehui"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="社会"
+            android:textSize="18sp"
+            android:textColor="@color/deepskyblue"
+            android:gravity="center"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/textview_junshi"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="军事"
+            android:textSize="15sp"
+            android:gravity="center"/>
+        <TextView
+        android:id="@+id/textview_tiyu"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="体育"
+        android:textSize="15sp"
+        android:gravity="center"/>
+        <TextView
+        android:id="@+id/textview_yule"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="娱乐"
+            android:textSize="15sp"
+        android:gravity="center"/>
+        <TextView
+            android:id="@+id/textview_guoji"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="国际"
+            android:textSize="15sp"
+            android:gravity="center"/>
+        <TextView
+        android:id="@+id/textview_shishang"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="时尚"
+            android:textSize="15sp"
+        android:gravity="center"/>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </android.support.v4.view.ViewPager>
+
+
+</LinearLayout>
